@@ -15,6 +15,7 @@ public class ToCreateAndVerifyContactsTest extends BaseClass
 	@Test
 	public void toCreateAndVerifyContactsTest() throws Throwable
 	{
+		// RANDOM NUMBER
 		int randNum = jlib.getRandomNumber();
 
 		//fetch the data from the excel file
