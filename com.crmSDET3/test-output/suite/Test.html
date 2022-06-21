@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 16 16:11:16 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>135 seconds (135908 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.Documents.ToCreateAndVerifyTheDocumentsTest.toCreateAndVerifyTheDocumentsTest()'><b>toCreateAndVerifyTheDocumentsTest</b><br>Test class: com.crm.Documents.ToCreateAndVerifyTheDocumentsTest<br/>
+<a href="#Output-795781754" onClick='toggleBox("Output-795781754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-795781754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-795781754">
+toCreateAndVerifyTheDocumentsTestmethod is started<br/>
+=======Executing=======<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.crm.Documents.ToCreateAndVerifyTheDocumentsTest.toCreateAndVerifyTheDocumentsTest(ToCreateAndVerifyTheDocumentsTest.java:32)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795781754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795781754'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.crm.Documents.ToCreateAndVerifyTheDocumentsTest.toCreateAndVerifyTheDocumentsTest(ToCreateAndVerifyTheDocumentsTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>5</td>
+<td>com.crm.Documents.ToCreateAndVerifyTheDocumentsTest@437da279</td></tr>
+<tr>
+<td title='com.crm.Campaigns.ToCreateAndVerifyTheCampaignsTest.toCreateAndVerifyTheCampaignsTest()'><b>toCreateAndVerifyTheCampaignsTest</b><br>Test class: com.crm.Campaigns.ToCreateAndVerifyTheCampaignsTest<br/>
+<a href="#Output-316150387" onClick='toggleBox("Output-316150387", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316150387" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316150387">
+toCreateAndVerifyTheCampaignsTestmethod is started<br/>
+=======Executing=======<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.crm.Campaigns.ToCreateAndVerifyTheCampaignsTest.toCreateAndVerifyTheCampaignsTest(ToCreateAndVerifyTheCampaignsTest.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace316150387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace316150387'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.crm.Campaigns.ToCreateAndVerifyTheCampaignsTest.toCreateAndVerifyTheCampaignsTest(ToCreateAndVerifyTheCampaignsTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>8</td>
+<td>com.crm.Campaigns.ToCreateAndVerifyTheCampaignsTest@31fa1761</td></tr>
+<tr>
+<td title='com.crm.Organization.ToCreateAndVerifyOrganizationTest.toCreateAndVerifyOrganizationTest()'><b>toCreateAndVerifyOrganizationTest</b><br>Test class: com.crm.Organization.ToCreateAndVerifyOrganizationTest<br/>
+<a href="#Output-2096991619" onClick='toggleBox("Output-2096991619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2096991619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096991619">
+toCreateAndVerifyOrganizationTestmethod is started<br/>
+=======Executing=======<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.crm.Organization.ToCreateAndVerifyOrganizationTest.toCreateAndVerifyOrganizationTest(ToCreateAndVerifyOrganizationTest.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2096991619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2096991619'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.fail(Assert.java:106)
+	at com.crm.Organization.ToCreateAndVerifyOrganizationTest.toCreateAndVerifyOrganizationTest(ToCreateAndVerifyOrganizationTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>11</td>
+<td>com.crm.Organization.ToCreateAndVerifyOrganizationTest@23c30a20</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.purchaseorder.ToCreateAndVerifyThePurchaseOrderTest.toCreateAndVerifyThePurchaseOrderTest()'><b>toCreateAndVerifyThePurchaseOrderTest</b><br>Test class: com.crm.purchaseorder.ToCreateAndVerifyThePurchaseOrderTest<br/>
+<a href="#Output-1972910458" onClick='toggleBox("Output-1972910458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1972910458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1972910458">
+toCreateAndVerifyThePurchaseOrderTestmethod is started<br/>
+toCreateAndVerifyThePurchaseOrderTestmethod is passed<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.crm.purchaseorder.ToCreateAndVerifyThePurchaseOrderTest@12aba8be</td></tr>
+<tr>
+<td title='com.crm.Product.ToCreateAndVerifyProductTest.toCreateAndVerifyProductTest()'><b>toCreateAndVerifyProductTest</b><br>Test class: com.crm.Product.ToCreateAndVerifyProductTest<br/>
+<a href="#Output-1999045763" onClick='toggleBox("Output-1999045763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1999045763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1999045763">
+toCreateAndVerifyProductTestmethod is started<br/>
+toCreateAndVerifyProductTestmethod is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.crm.Product.ToCreateAndVerifyProductTest@1e1a0406</td></tr>
+<tr>
+<td title='com.crm.Contacts.ToCreateAndVerifyContactsTest.toCreateAndVerifyContactsTest()'><b>toCreateAndVerifyContactsTest</b><br>Test class: com.crm.Contacts.ToCreateAndVerifyContactsTest<br/>
+<a href="#Output-201403501" onClick='toggleBox("Output-201403501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201403501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201403501">
+toCreateAndVerifyContactsTestmethod is started<br/>
+toCreateAndVerifyContactsTestmethod is passed<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.crm.Contacts.ToCreateAndVerifyContactsTest@7bab3f1a</td></tr>
+<tr>
+<td title='com.crm.Product.ToCreateAndVerifyTheProductTest.toCreateAndVerifyTheProductTest()'><b>toCreateAndVerifyTheProductTest</b><br>Test class: com.crm.Product.ToCreateAndVerifyTheProductTest<br/>
+<a href="#Output-234878817" onClick='toggleBox("Output-234878817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-234878817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-234878817">
+toCreateAndVerifyTheProductTestmethod is started<br/>
+toCreateAndVerifyTheProductTestmethod is passed<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.crm.Product.ToCreateAndVerifyTheProductTest@3cebbb30</td></tr>
+</table><p>
+</body>
+</html>

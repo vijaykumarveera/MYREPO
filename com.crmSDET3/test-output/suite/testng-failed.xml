@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="TestRunner2(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.purchaseorder.ToCreateAndVerifyThePurchaseOrderTest">
+        <methods>
+          <include name="dbConfig"/>
+          <include name="toCreateAndVerifyThePurchaseOrderTest"/>
+          <include name="lauchTheBrowser"/>
+          <include name="closeDBconfig"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+        </methods>
+      </class> <!-- com.crm.purchaseorder.ToCreateAndVerifyThePurchaseOrderTest -->
+    </classes>
+  </test> <!-- TestRunner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
