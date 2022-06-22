@@ -16,7 +16,7 @@ public class ToCreateAndVerifyTheDocumentsTest extends BaseClass
 	@Test()
 	public void toCreateAndVerifyTheDocumentsTest() throws Throwable
 	{ 
-		//changes in eclipse into github
+		//tejas is very good girl
 		//To get the random number 
 		int randNum = jlib.getRandomNumber();
 
