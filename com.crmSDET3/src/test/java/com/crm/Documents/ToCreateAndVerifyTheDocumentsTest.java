@@ -16,8 +16,8 @@ public class ToCreateAndVerifyTheDocumentsTest extends BaseClass
 	@Test()
 	public void toCreateAndVerifyTheDocumentsTest() throws Throwable
 	{ 
-
-		//To get the random number
+		//i am changing the local into global 
+		//To get the random number 
 		int randNum = jlib.getRandomNumber();
 
 		//fetch the data from the Excel
