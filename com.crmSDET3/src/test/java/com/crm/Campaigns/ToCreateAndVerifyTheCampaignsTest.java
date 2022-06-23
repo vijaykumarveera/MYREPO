@@ -113,7 +113,8 @@ public class ToCreateAndVerifyTheCampaignsTest extends BaseClass
 		WebElement result = campaignsVerify.getCampaignsHeaderTxt();
 		//To verify the campagins is create or not
 		Assert.assertTrue(result.getText().contains(campaginsname));
-		System.out.println("campagins is created");
+		System.out.println("campagins is created and verified");
+		
 
 	}
 
