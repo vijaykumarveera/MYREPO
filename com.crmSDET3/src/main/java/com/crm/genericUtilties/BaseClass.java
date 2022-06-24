@@ -65,7 +65,7 @@ public class BaseClass
 		{
 			driver = new ChromeDriver();
 		}
-		//sDriver = driver;
+		sDriver = driver;
 		//implicity wait
 		wlib.waitForPageToLoad(driver);
 		//enter the URL of the Application

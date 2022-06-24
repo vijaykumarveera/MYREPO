@@ -14,7 +14,7 @@ import com.crm.objectRepository.CreateProductsPageTest;
 import com.crm.objectRepository.HomePageTest;
 import com.crm.objectRepository.ProductPageTest;
 
-//@Listeners(com.crm.genericUtilties.MyListners.class)
+@Listeners(com.crm.genericUtilties.MyListners.class)
 public class ToCreateAndVerifyTheCampaignsTest extends BaseClass
 {
 	

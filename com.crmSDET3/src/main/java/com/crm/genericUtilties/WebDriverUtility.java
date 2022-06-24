@@ -237,14 +237,15 @@ public class WebDriverUtility
 	 * @param screenShotName
 	 * @throws IOException
 	 */
-	public void takeScreenShot(WebDriver driver, String screenShotName) throws IOException
+	public static String  takeScreenShot(WebDriver driver, String screenShotName) throws IOException
 	{
 		TakesScreenshot takeScreenShot = (TakesScreenshot)driver;
 		File src = takeScreenShot.getScreenshotAs(OutputType.FILE);
-		File dst = new File("./screenshot/"+screenShotName+"PNG");
+		File dst = new File("./screenshots/"+screenShotName+".PNG");
 		Files.copy(src, dst);
+		return screenShotName;
 	}
-	/**
+	/** 
 	 * it is used to perform scrollBar Actions
 	 * @param driver
 	 */
