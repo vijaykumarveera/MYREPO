@@ -80,8 +80,5 @@ public class MyListners implements ITestListener
 	{
 		report.flush();
 		Reporter.log(context.getName()+"test is finished",true);
-	}
-
-
-
+	} 
 }
