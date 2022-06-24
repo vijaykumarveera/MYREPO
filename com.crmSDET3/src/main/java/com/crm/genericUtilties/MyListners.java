@@ -1,10 +1,5 @@
 package com.crm.genericUtilties;
 
-import java.io.File;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -38,8 +33,8 @@ public class MyListners implements ITestListener
 		test.log(Status.FAIL, result.getThrowable());
 		try
 		{
-			String screenShotName = WebDriverUtility.takeScreenShot(BaseClass.sDriver, result.getMethod().getMethodName());
-			
+			String screenshotName = WebDriverUtility.takeScreenShot(BaseClass.sDriver, result.getMethod().getMethodName());
+			test.addScreenCaptureFromPath(screenshotName);
 		}
 		catch(Throwable e )
 		{
